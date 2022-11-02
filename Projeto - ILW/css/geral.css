@@ -1,0 +1,140 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px; text-decoration: none;
+    color: #FFFFFF;
+}
+
+html{scroll-behavior: smooth;}
+
+/* --- Cores e efeitos ---*/
+:root{
+    --amarelo: rgb(255, 200, 0);
+    --preto-transparente: rgba(0, 0, 0, 0.3);
+    --botao-hover: rgba(255, 255, 255, 0.3);
+}
+
+.vidro{
+    background-color: var(--preto-transparente);
+    backdrop-filter: blur(10px);
+}
+
+.card{
+    margin: 30px 0;
+    border-radius: 20px;
+}
+div.card{
+    padding-top: 30px;
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: #8d8d8d;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--amarelo);
+    border-radius: 5px;
+    border: 3px solid #8d8d8d;
+}
+::-webkit-scrollbar-thumb:hover{
+    border: 2px solid #8d8d8d;
+}
+
+/* --- Páginas e Elementos --- */
+#sobre-html, #produtos-html{
+    padding-top: 80px;
+}
+
+.container{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+body{
+    background: url("../img/fundo-escuro.webp");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h2{
+    font-size: 35px;
+    text-align: center;
+    color: var(--amarelo);
+}
+
+.horizontal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* --- Header --- */
+header{
+    position: fixed;
+    top: 0; left: 0;
+    padding: 1% 1.5%;
+    width: 100vw;
+    z-index: 1;
+}
+header .container{
+    max-width: 100%; height: 80px;
+    padding: 0 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px var(--botao-hover);
+    user-select: none;
+}
+.logo, .menu-desk{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 60px;
+}
+.menu-desk li{
+    padding: 0 10px;
+    display: inline-block;
+}
+.selected a, .menu-desk a:hover{
+    color: var(--amarelo);
+}
+.menu-desk a{
+    padding: 5px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+/* --- Footer ---*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+
+.logomarca{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.logomarca img{
+    width: 60px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer li{
+    display: inline-block;
+    margin: 0 15px;
+}
