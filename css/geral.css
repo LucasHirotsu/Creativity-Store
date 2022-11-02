@@ -18,6 +18,7 @@ html{scroll-behavior: smooth;}
 .vidro{
     background-color: var(--preto-transparente);
     backdrop-filter: blur(10px);
+    -webkit-background-clip: blur(10px)
 }
 
 .card{
