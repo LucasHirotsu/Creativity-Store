@@ -18,7 +18,7 @@ html{scroll-behavior: smooth;}
 .vidro{
     background-color: var(--preto-transparente);
     backdrop-filter: blur(10px);
-    -webkit-background-clip: blur(10px)
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .card{
@@ -87,8 +87,9 @@ header .container{
     border-radius: 15px;
     box-shadow: 0 0 20px var(--botao-hover);
     user-select: none;
+    align-items: center;
 }
-.logo, .menu-desk{
+.logo, .menu-desk, .link-logo{
     height: 80px;
     display: flex;
     align-items: center;
@@ -96,9 +97,12 @@ header .container{
 .logo img{
     height: 60px;
 }
+.menu-list{
+    display: flex;
+    gap: 10px;
+}
 .menu-desk li{
-    padding: 0 10px;
-    display: inline-block;
+    list-style: none;
 }
 .selected a, .menu-desk a:hover{
     color: var(--amarelo);
@@ -108,7 +112,9 @@ header .container{
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
 }
-
+.link-logo{
+    gap: 15px;
+}
 /* --- Footer ---*/
 footer{
     display: flex;
