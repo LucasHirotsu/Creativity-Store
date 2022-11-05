@@ -19,7 +19,6 @@ section.banner{
     justify-content: center;
     background: url(../img/Banner/banner-escuro.webp) no-repeat center;
     background-size: cover;
-    background-attachment: fixed;
     text-align: center;
 }
 .conteudo-banner{
