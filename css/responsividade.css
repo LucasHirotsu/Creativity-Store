@@ -79,4 +79,9 @@
     .form-container{
         padding: 0;
     }
+
+    .pagina-produto h1{
+        font-size: 50px;
+        width: 400px;
+    }
 }
