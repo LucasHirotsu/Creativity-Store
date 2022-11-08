@@ -67,6 +67,13 @@ h2{
     color: var(--amarelo);
 }
 
+h3{
+    font-size: 25px;
+    text-align: center;
+    color: #FFF;
+    margin-top: 10px;
+}
+
 .horizontal{
     display: flex;
     flex-direction: row;

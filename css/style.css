@@ -280,4 +280,25 @@ section.banner{
 }
 .produtos .container{
     padding-bottom: 30px;
+    justify-content: space-between;
+}
+.produto{
+    box-shadow: 0 0 10px var(--botao-hover);
+    padding: 15px;
+    width: 30%;
+    text-align: center;
+}
+.produto-img{
+    aspect-ratio: 4/3;
+    width: 100%;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+}
+#caneca-colorida{
+    background-image: url(../img/Produtos/Canecas/Canecas-coloridas.png);
+}
+
+.produto-img:hover{
+    background-size: 125%;
 }
