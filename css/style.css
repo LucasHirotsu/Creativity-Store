@@ -335,8 +335,12 @@ section.banner{
     gap: 50px;
 }
 
+.centro h1, .centro div{
+    width: 100%;
+}
+
 .preco{
-    width: 30%;
+    width: 40%;
     margin: 30px 0;
 }
 .comprar{
@@ -346,4 +350,9 @@ section.banner{
 .comprar span{
     color: var(--amarelo);
     scale: 1.2;
+}
+
+.preco .diferenciais{
+    margin: auto;
+    gap: 10px;
 }

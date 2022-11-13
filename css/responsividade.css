@@ -84,4 +84,24 @@
         font-size: 50px;
         width: 400px;
     }
+
+    .produtos .container{
+        gap: 30px;
+    }
+
+    .produto{
+        width: 100%;
+    }
+
+    .preco{
+        width: 100%;
+    }
+
+    .descricao .horizontal{
+        gap: 15px;
+    }
+
+    .comprar{
+        margin-top: 30px;
+    }
 }
