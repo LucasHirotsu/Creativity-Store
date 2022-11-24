@@ -19,9 +19,16 @@ section.banner{
     justify-content: center;
     background: url(../img/Banner/banner-escuro.webp) no-repeat center;
     background-size: cover;
-    background-attachment: fixed, scroll;
+    background-attachment: fixed;
     text-align: center;
 }
+
+@supports not (background-attachment: fixed;){
+    .banner{
+        background-attachment: scroll;
+    }
+}
+
 .conteudo-banner{
     height: 100%;
     max-width: 90%;
