@@ -23,7 +23,7 @@ section.banner{
     text-align: center;
 }
 
-@supports not (background-attachment: fixed;){
+@supports not (background-attachment: fixed){
     .banner{
         background-attachment: scroll;
     }
