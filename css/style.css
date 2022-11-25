@@ -23,7 +23,7 @@ section.banner{
     text-align: center;
 }
 
-@supports not (background-attachment: fixed){
+@media screen and (-webkit-min-device-pixel-ratio:0) {
     .banner{
         background-attachment: scroll;
     }
@@ -290,6 +290,15 @@ section.banner{
 .produtos .container{
     padding-bottom: 30px;
     justify-content: space-between;
+    width: 95%;
+}
+.produtos .horizontal{
+    gap: 30px;
+}
+.produtos{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 .produto{
     box-shadow: 0 0 10px var(--botao-hover);
@@ -308,6 +317,15 @@ section.banner{
 }
 #caneca-colorida{
     background-image: url(../img/Produtos/Canecas/Canecas-coloridas.png);
+}
+#lagrimas{
+    background-image: url(../img/Produtos/Canecas/lagrimas-capa.webp);
+    background-position: bottom center;
+}
+#banner-lagrimas{
+    background-image: url(../img/Produtos/Canecas/lagrimas.webp);
+    animation: none;
+    background-attachment: scroll;
 }
 #em-breve{
     background-image: url(../img/Produtos/em-breve.jpg);
