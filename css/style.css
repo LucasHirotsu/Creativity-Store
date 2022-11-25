@@ -23,9 +23,11 @@ section.banner{
     text-align: center;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    .banner{
-        background-attachment: scroll;
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+        .banner{
+            background-attachment: scroll;
+        }
     }
 }
 
