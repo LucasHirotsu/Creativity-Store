@@ -29,6 +29,12 @@ section.banner{
     }
 }
 
+@supports (-webkit-hyphens:none){
+    .banner{
+        background-attachment: scroll;
+    }
+}
+
 .conteudo-banner{
     height: 100%;
     max-width: 90%;
