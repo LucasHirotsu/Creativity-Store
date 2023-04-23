@@ -350,7 +350,7 @@ section.banner{
     height: 100vh;
     margin:0;
     padding: 0;
-    background-attachment: local;
+    background-attachment: fixed;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     background-size: cover;
