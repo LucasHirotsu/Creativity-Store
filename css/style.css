@@ -351,6 +351,8 @@ section.banner{
     margin:0;
     padding: 0;
     background-attachment: fixed;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     background-size: cover;
     background-position: center;
     text-shadow: 0 0 10px var(--preto-transparente);
